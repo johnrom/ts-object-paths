@@ -1,0 +1,50 @@
+{
+  "name": "ts-object-paths",
+  "description": "Some TypeScript helpers to traverse objects and relate nested keys to value.",
+  "version": "0.0.1-beta2",
+  "author": {
+    "name": "John Rom",
+    "url": "https://johnrom.com/"
+  },
+  "homepage": "https://github.com/johnrom/ts-object-paths#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnrom/ts-object-paths.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johnrom/ts-object-paths/issues"
+  },
+  "keywords": [
+    "typescript",
+    "path-of",
+    "nested-object-values"
+  ],
+  "types": "dist/ts-object-paths.d.ts",
+  "typesVersions": {
+    "<4.1": {
+      "dist/ts-object-paths.d.ts": [
+        "dist/ts-object-paths.untyped.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc --emitDeclarationOnly",
+    "docs": "typedoc --readme none && concat-md --decrease-title-levels ./temp/docs > ./docs/API.md"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "concat-md": "^0.3.5",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0",
+    "typedoc": "^0.20.31",
+    "typedoc-plugin-markdown": "^3.6.0",
+    "typescript": "^4.2.3"
+  }
+}

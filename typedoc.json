@@ -1,0 +1,4 @@
+{
+  "entryPoints": ["src/path-helpers.ts", "src/path-helpers.untyped.ts"],
+  "out": "temp/docs"
+}
